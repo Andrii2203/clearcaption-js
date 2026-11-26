@@ -20,6 +20,14 @@ const many = await fetchMany(["https://www.youtube.com/@freecodecamp"]);     // 
 
 Same output shape as Python's `youtube-transcript-api`, so it is a drop-in for JS projects.
 
+## Command line
+
+```bash
+npx clearcaption dQw4w9WgXcQ                  # plain text
+npx clearcaption dQw4w9WgXcQ --srt > out.srt  # SRT subtitles
+npx clearcaption dQw4w9WgXcQ --to de --json   # translated segments as JSON
+```
+
 - Python client: [clearcaption-youtube-transcript](https://github.com/Andrii2203/clearcaption-youtube-transcript)
 - No-code / SRT / VTT / MCP server for AI agents: [Apify Store](https://apify.com/clearcaption/youtube-transcript-translate)
 
