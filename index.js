@@ -36,7 +36,8 @@ export async function fetchMany(videos, { token, translateTo, signal } = {}) {
     const id = item.videoId || item.input;
     if (item.status !== "OK") { out[id] = new TranscriptError(item.status, id); continue; }
     const tr = item.translation || {};
-    out[id] = toSegments(translateTo && tr.segments ? tr.segments : item.segments);
+    if (translateTo && !(tr.segments && tr.segments.length)) { out[id] = new TranscriptError(`TRANSLATION_UNAVAILABLE:${translateTo}`, id); continue; }
+    out[id] = toSegments(translateTo ? tr.segments : item.segments);
   }
   return out;
 }

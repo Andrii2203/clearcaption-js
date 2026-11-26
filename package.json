@@ -1,6 +1,6 @@
 {
   "name": "clearcaption",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "YouTube transcripts and subtitles from any server (AWS, Vercel, Cloudflare) with optional timestamped translation. Zero dependencies.",
   "type": "module",
   "main": "index.js",
