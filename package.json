@@ -1,0 +1,14 @@
+{
+  "name": "clearcaption",
+  "version": "0.1.0",
+  "description": "YouTube transcripts and subtitles from any server (AWS, Vercel, Cloudflare) with optional timestamped translation. Zero dependencies.",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": ["index.js", "index.d.ts", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "keywords": ["youtube", "transcript", "subtitles", "captions", "youtube-transcript", "srt", "vtt", "translation", "apify", "mcp"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/Andrii2203/clearcaption-js.git" },
+  "homepage": "https://apify.com/clearcaption/youtube-transcript-translate"
+}
